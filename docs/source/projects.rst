@@ -197,11 +197,11 @@ useful if you quickly want to test a project in your existing shell environment.
 Remote Execution on Databricks
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Support for running projects remotely on Databricks is in beta preview and requires a Databricks account. 
-To receive future updates about the feature please `sign up here <http://databricks.com/mlflow>`_.
+To receive updates about the feature please `sign up here <http://databricks.com/mlflow>`_.
 
 
 Launching a Remote Execution on Databricks
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 To use this feature, you need to have a Databricks account (Community Edition is not yet supported)
 and you must have set up the `Databricks Command Line utility <https://docs.databricks.com/api/latest/jobs.html#jobsclusterspecnewcluster>`_. Find more detailed instructions in the Databricks docs (`here for Azure Databricks <https://docs.databricks.com/applications/mlflow/index.html>`_, `here for Databricks on AWS <https://docs.databricks.com/applications/mlflow/index.html>`_). A brief overview of how to use the feature is as follows:
 
@@ -213,7 +213,7 @@ for your run. Then, run your project via
 
   mlflow run <uri> -m databricks --cluster-spec <json-cluster-spec>
 
-``<uri>`` must be a Git repository URI. You can also pass Git credentials via the
+``<uri>`` can be a local folder or a Git repository URI. You can also pass Git credentials via the
 ``git-username`` and ``git-password`` arguments (or via the ``MLFLOW_GIT_USERNAME`` and
 ``MLFLOW_GIT_PASSWORD`` environment variables).
 
